@@ -1,0 +1,177 @@
+/* Start all element */
+:root {
+    --black: #2d3436;
+    --chocolate: #e17055;
+    --blue: #0984e3; 
+    --gray: #636e72; 
+    --yellow: #ffeaa7;
+    --gill_sans: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Start of body */
+body {
+    background-color: #339;
+    font-family: var(--gill_sans);
+    display: inline-block;
+    margin: 12px;
+}
+/* End of body */
+
+/* Start of header class and tags */
+.flex-row h2 {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    justify-content: center;
+    margin-top: 50px;
+}
+
+header {
+    padding: 20px 35px;
+    background-color: black;
+    color: chocolate;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 36px;
+    padding: 3px;
+    width: 50px;
+    height: 50px;
+}
+
+header nav {
+    float: right top;
+    margin: 17px 0;
+    padding: 15px 10px;
+    position: relative;
+}
+
+header nav ul {
+    /* list-style-type: none; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-right: 0px;
+}
+
+header nav ul li {
+    /* display: inline-block;
+    margin-left: 87px; */
+    font-size: 1.8vm;
+    padding: 10px 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+header nav ul li a {
+    font-size: xx-large;
+}
+
+header a {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+
+.hero {
+    flex-flow: column wrap;
+    position: relative;
+    width: 100%;
+}
+
+.hero h2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.hero-cta div{
+    justify-content: space-between;
+}
+
+.hero-cta h2 {
+    font-size: 36px;
+    text-decoration: none;
+    border-bottom: 5px solid white;
+    padding: 100px 328px;
+    background-color: gray;
+    color: chocolate;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: sticky;
+    align-items: flex-start;
+    align-content: space-around;
+    flex-direction: row; */
+}
+
+.hero div p {
+    display: inline-block;
+    flex-wrap: wrap;
+    padding: 40px;
+    margin: 22px;
+}
+
+article div {
+    align-items: center;
+}
+
+article div h2 {
+    padding-right: 36px;
+}
+
+article div p {
+    display: flex;
+    flex-flow: column wrap;
+    padding-right: 12px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* section div {
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* Footer styles starts */
+footer {
+    background:darkgoldenrod;
+    width: 100%;
+    padding: 2px 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    color: black;
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a {
+    color: green;
+}
+
+/* Footer styles Ends */
