@@ -180,11 +180,6 @@ article div p {
     height: 300px;
 }
 
-/* #run-buddy {
-    justify-content: center;
-    align-content: space-between;
-} */
-
 #run-buddy img {
     transition: transform .5s ease-in-out;
 }
@@ -202,11 +197,11 @@ article div p {
 }
 
 #html-css img {
-    transform: scale(1.2);
+    transition: transform .5s ease-in-out;
 }
 
 #html-css:hover {
-    transition: transform .5s ease-in-out;
+    transform: scale(1.2);
 }
 
 /* Footer styles starts */
