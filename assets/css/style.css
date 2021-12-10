@@ -25,12 +25,6 @@ body {
 
 /* Start of header class and tags */
 
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 50px;
-}
 
 header {
     padding: 52px 25px;
@@ -41,6 +35,14 @@ header {
     justify-content: space-between;
     position: -webkit-sticky;
     position: sticky;
+}
+
+header a {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    border-bottom: 2px solid white;
 }
 
 header h1 {
@@ -85,14 +87,6 @@ header nav ul li a {
     margin-top: 0.8%;
 }
 
-header a {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    text-decoration: none;
-    border-bottom: 2px solid white;
-}
-
 .hero {
     flex-flow: column wrap;
     position: relative;
@@ -129,6 +123,13 @@ header a {
     flex-wrap: wrap;
     padding: 40px;
     margin: 22px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 article div {
@@ -203,6 +204,7 @@ article div p {
 #html-css:hover {
     transform: scale(1.2);
 }
+/* End of header class and tags */
 
 /* Footer styles starts */
 footer {
