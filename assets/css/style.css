@@ -28,16 +28,14 @@ body {
 .flex-row {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     justify-content: center;
     margin-top: 50px;
 }
 
 header {
-    padding: 20px 35px;
+    padding: 52px 25px;
     background-color: black;
     color: chocolate;
-    /* display: flex; */
     display: block;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -46,11 +44,6 @@ header {
 }
 
 header h1 {
-    /* display: inline-block;
-    font-size: 36px;
-    padding: 3px;
-    width: 50px;
-    height: 50px; */
     display: inline-block;
     font-size: 36px;
     padding: 5px;
@@ -66,7 +59,6 @@ header nav {
 }
 
 header nav ul {
-    /* list-style-type: none; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -76,8 +68,6 @@ header nav ul {
 }
 
 header nav ul li {
-    /* display: inline-block;
-    margin-left: 87px; */
     font-size: 1.8vm;
     padding: 10px 15px;
     margin-top: 5px;
@@ -85,7 +75,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    font-size: xx-large;
+    font-size: large;
 }
 
 .avatar {
@@ -169,16 +159,55 @@ article div p {
     height: 400px;
 }
 
+.contact {
+    align-items: stretch;
+    display: contents;
+}
+
+.contact a:link {
+    color: greenyellow;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: lightsalmon;
+    text-decoration:khaki;
+}
+
 .pictures {
     flex: 1 0 0;
     width: 300px;
     height: 300px;
 }
 
-/* section div {
-    display: flex;
-    justify-content: space-between;
+/* #run-buddy {
+    justify-content: center;
+    align-content: space-between;
 } */
+
+#run-buddy img {
+    transition: transform .5s ease-in-out;
+}
+
+#run-buddy:hover {
+    transform: scale(1.2);
+}
+
+#horiseon img {
+    transition: transform .5s ease-in-out;
+}
+
+#horiseon:hover {
+    transform: scale(1.2);
+}
+
+#html-css img {
+    transform: scale(1.2);
+}
+
+#html-css:hover {
+    transition: transform .5s ease-in-out;
+}
 
 /* Footer styles starts */
 footer {
@@ -204,5 +233,71 @@ footer div {
 footer a {
     color: green;
 }
-
 /* Footer styles Ends */
+
+/* Media query for smaller desktop screens */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 70px;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    header h1 {
+        width: 18%;
+        text-align: center;
+    }
+
+    .contact {
+        align-items: stretch;
+        display: contents;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    article div {
+        align-items: stretch;
+        display: contents;
+    }
+  }
+
+
+/* MEDIA QUERY FOR Tablets and smaller */
+@media screen and (max-width: 768px) {
+    .box {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    header {
+        padding-bottom: 70px;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    header h1 {
+        width: 18%;
+        text-align: center;
+    }
+
+    .contact {
+        align-items: stretch;
+        display: contents;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    article div {
+        align-items: stretch;
+        display: flex;
+    }
+  }
