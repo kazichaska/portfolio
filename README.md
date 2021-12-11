@@ -37,4 +37,4 @@ https://kazichaska.github.io/portfolio/
 
 ### Screenshots of the code
 ![index](./assets/images/index.png)
-![style](./assets/images/style.png)
+![style](./assets/images/css.png)
